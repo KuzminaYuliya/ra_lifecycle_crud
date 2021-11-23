@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 const Note = (props) => {
     const ref = useRef();
     const onDeleteBtnClickHandler = () => {
-        const {id} = ref.current.dataset;
-        props.deleteNote(id);
+        props.deleteNote(props.id);
     };
 
     return (
